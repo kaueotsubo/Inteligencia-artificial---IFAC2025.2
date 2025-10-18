@@ -1,0 +1,69 @@
+Um cachorro pertence a uma pessoa. Essa pessoa mora em uma casa. A casa es´ta localizada em uma cidade. O cachorro é um animal. Todo animal precisa de comida. Se uma pessoa possui um animal, ela é responsável por alimentá-lo.
+
+Análise de requisitos:
+
+1. Nós
+- Cachorro
+- Pessoa
+- Casa
+- Cidade
+- Animal
+- Comida
+
+2. Relações - arestas
+- Cachorro -> pertence_a -> Pessoa
+- Pessoa -> mora_em -> Casa
+- Casa ->localizada_em -> Cidade
+- Cachorro -> é_um -> Animal
+- Animal -> precisa_de -> Comida
+
+- Regra lógica: Se x possui y e y é_um Animal, então X -> responsável_por -> alimentar(y)
+
+Se "Pessoa possui Cachorro" e "Cachorro é_um Animal"
+Inferência
+"Pessoa é responsável_por alimentar Cachorro"
+
+
+- Mini-sistema de Raciocínio Semântico
+
+0. Criar uma classe rede_semantica.py
+1. Criar uma estrutura para cadastrar conceitos (nós)
+2. Criar uma estrutura para cadastrar relações (arestas)
+3. Criar uma estrutura para realizar as inferências com base nas regras
+4. Criar uma estrutura para apresentar graficamente a rede semântica.
+
+
+Implementar:
+1. main.py - principal
+2. rede_semantica.py - gerenciar nós e relações
+3. regras.py - implementação de regras lógicas
+4. visualizacao.py - exibição gráfica
+
+
+==============================
+Matriz é uma estrutura linear
+
+A 3X3 = 3 linhas e 3 colunas
+
+A = 	[
+		a01 a02 a03
+		a11 a12 a13
+		a21 a22 a23		 
+    	]
+
+
+A 2X3X3
+ "camada"xcolunaXlinha
+
+A = 	[
+	
+		[matriz1]
+		[matriz2]
+	
+	]
+	
+
+
+
+
+
